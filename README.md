@@ -89,7 +89,7 @@ See also the list of [contributors](https://github.com/Usamaliaquat123/DigitEMB-
 
 ## License
 
-This project is licensed under the MIT License 
+This project is licensed under the MIT License . See [License](https://github.com/flightjs/example-app/blob/master/LICENSE.md) for details.
 
 ## Acknowledgments
 
