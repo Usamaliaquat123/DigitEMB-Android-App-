@@ -1,0 +1,54 @@
+
+<ion-header color="dark" swipeEnabled="True">
+  <ion-navbar color="dark">
+    <ion-buttons left>
+      <button color="dark" ion-button menuToggle>
+        <ion-icon color="light" name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title style="color:aliceblue;">Welcome {{(profileData | async)?.FirstName }}</ion-title>
+  </ion-navbar>
+</ion-header>
+  
+  
+<ion-content style="background-color:#121315">
+  <br>
+  <div style="width:80%; margin-left:5%"> 
+    <ion-input  style="color:#FFFFFF; width:80%;" placeholder="Search Categorie" name="search" type="text" value=""></ion-input>
+  </div>
+<div style=" margin-left:5%; border: 1px solid #FFFFFF; width:80%; opacity: .2;" ></div>
+
+<ion-grid style="position:fixed;" >
+  <ion-row >
+    <ion-col (click)="FreeEmbroidry()"><img src="assets/img/UserContents/Shirt.png"></ion-col>
+    <ion-col (click)="FreeEmbroidry()"><img src="assets/img/UserContents/cap.png"></ion-col>
+</ion-row>
+  <ion-row >
+    <ion-col (click)="FreeEmbroidry()"><img src="assets/img/UserContents/3d puff.png"></ion-col>
+    <ion-col (click)="FreeEmbroidry()"><img src="assets/img/UserContents/jacketback.png"></ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col (click)="FreeEmbroidry()"><img src="assets/img/UserContents/towel.png"></ion-col>
+    <ion-col (click)="CustomDesigns()"><img src="assets/img/UserContents/Custom.png"></ion-col>
+  </ion-row>
+</ion-grid>
+
+<!-- After Update versions -->
+
+<!-- <ion-fab center middle>
+  <button ion-fab color="danger"><ion-icon name="md-share"></ion-icon></button>
+  <ion-fab-list side="top">
+    <button ion-fab color="primary"><ion-icon name="logo-vimeo"></ion-icon></button>
+  </ion-fab-list>
+  <ion-fab-list side="bottom">
+    <button style="background-color: #4862A3;" ion-fab color="secondary"><ion-icon name="logo-facebook"></ion-icon></button>
+  </ion-fab-list>
+  <ion-fab-list side="left">
+    <button style="background-color: #CE4539;"  ion-fab color="light"><ion-icon name="logo-googleplus"></ion-icon></button>
+  </ion-fab-list>
+  <ion-fab-list side="right">
+    <button (click)="shareWithSocials('https://twitter.com/intent/tweet?text=Share%20our%20new%20mobile%20app%20to%20explore%20our%20embroidery%20digitized%20designs%20you%20can%20find%20it%20on%20our%20website%20https://www.digitemb.com/')" style="background-color: #1DA1F2;"ion-fab><ion-icon name="logo-twitter"></ion-icon></button>
+  </ion-fab-list>
+</ion-fab> -->
+
+</ion-content>

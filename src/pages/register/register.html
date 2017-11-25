@@ -1,0 +1,92 @@
+
+
+<ion-content >
+  <ion-slides style="position: fixed;" pager="false" autoplay="2000"  loop="true" speed="1500" effect="fade">
+        <ion-slide class="swiper-no-swiping" style=" background-size: cover;background-position: center;background-repeat: no-repeat; width:100%;" *ngFor="let background of backgrounds" [ngStyle]="{'background-image': 'url(' + background +')'}">
+</ion-slide>
+</ion-slides>
+<div style="   color: white;
+position: absolute;
+top: 0;
+padding: 10vw;
+text-align: center;
+width: 100%;
+margin: 0 auto;
+z-index: 2;">
+<div style=" margin-top:-20%;text-align:center;">
+  <br>
+  <br>
+ <img src="assets/img/logo.png" width="180" height="180">
+ <!--Your name input  -->
+ 
+      <div style="border-radius: 25px;
+    border: 2px solid #FFFFFF;
+    padding: 0.5px; 
+    width: 80%;
+    text-align:center;
+    margin-left:10%;
+    ">
+    <ion-input style="color:#FFFFFF;" placeholder="Your FullName here" name="FirstName" type="text" value="" [(ngModel)] = "user.FirstName"></ion-input>
+ </div><br>
+  <!--Your email input  -->
+  <div style="border-radius: 25px;
+    border: 2px solid #FFFFFF;
+    padding: 0.5px; 
+    width: 80%;
+    text-align:center;
+    margin-left:10%;
+    ">
+    <ion-input style="color:#FFFFFF;" pattern="[A-Za-z0-9._%+-]{3,}@[a-zA-Z]{3,}([.]{1}[a-zA-Z]{2,}|[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,})" placeholder="Your Email here" name="email" type="email" value="" [(ngModel)] = "user.email"></ion-input>
+ </div><br>
+  <!--Your Phone Number here  -->
+  <div style="border-radius: 25px;
+    border: 2px solid #FFFFFF;
+    padding: 0.5px; 
+    width: 80%;
+    text-align:center;
+    margin-left:10%;
+    ">
+    <ion-input style="color:#FFFFFF;" placeholder="Your Phone Number" name="PhoneNumber" type="number" value="" [(ngModel)] = "user.PhoneNumber"></ion-input>
+ </div><br>
+  <!--yOUR PASSWORD HERE  -->
+  <div style="border-radius: 25px;
+    border: 2px solid #FFFFFF;
+    padding: 0.5px; 
+    width: 80%;
+    text-align:center;
+    margin-left:10%;
+    ">
+    <ion-input style="color:#FFFFFF;" placeholder="Your Password here" name="Password" type="password" value="" [(ngModel)] = "user.password"></ion-input>
+ </div><br>
+
+     <ion-list> 
+
+   
+        <div id="GenderSelecteorRegisterPage"><ion-select [(ngModel)]="UserGender" (ionChange)="Gender()"  style="max-width:100%; background-color:transparent; color:#FFFFFF;" interface="action-sheet" placeholder="Select Your Gender">
+              <ion-option value="Male">Male</ion-option>
+              <ion-option value="Female">Female</ion-option>
+              <ion-option value="Other">Other</ion-option>
+            
+             </ion-select></div>
+
+
+
+  </ion-list>
+  <div style="text-align:center;">
+      <button style="border: 2px solid #FFFFFF;  color:#FFFFFF; background-color:transparent; width:80%;" ion-button  round (click)="CreateProfile(user)">Register Your account</button><br>
+       </div>
+      <br>
+      <br> 
+     <div style="text-align:center">
+        <div style="color:#FFFFFF;">If you already have an account please </div><br>
+       <button style="border: 2px solid #FFFFFF;  color:#FFFFFF; background-color:transparent; width:80%;" ion-button  round (click)="login()">Log in</button><br>
+       
+      </div>
+</div>
+  
+
+
+  
+</div>
+
+</ion-content>

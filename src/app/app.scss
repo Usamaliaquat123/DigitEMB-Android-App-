@@ -1,0 +1,191 @@
+// http://ionicframework.com/docs/theming/
+
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+.action-sheet-group  > .action-sheet-cancel{
+    margin-left: 40%;
+}
+
+
+
+.action-sheet-container, .action-sheet-group {
+    background: #262737!important;
+}
+.platform-android, .action-sheet-group {
+    background: #262737 !important;   
+}
+.action-sheet-button {
+    color: aliceblue!important;
+}
+.action-sheet-container > .action-sheet-group > .activated{
+    background: #171721 !important;
+}
+.alert-wrapper{
+    background: #222222!important;
+    color: aliceblue;
+    font-size: 12px;
+}
+// .button-inner{
+//     color:aliceblue;
+//     text-transform: none;
+// }
+// .alert-button-default{
+//     background: #171721!important;
+// }
+.alert-wrapper{
+    background: #0C0C0E!important;
+}
+#GenderSelecteorRegisterPage > ion-select > .item-cover-md{
+    background-color: transparent;
+}
+.alert-button-group{
+    margin-right: 10%;
+    text-transform: none;
+}
+
+
+.button-inner{
+    text-align: center;
+   text-transform: none;
+   color: aliceblue;
+}
+.alert-title{
+    text-align:center;
+    letter-spacing: 1px;
+    opacity: .4;
+}
+
+.box-shadow-cover-img{
+    position: absolute;
+    box-shadow: inset -9px -9px 49px 0px rgba(0,0,0,0.75);
+    // width: 600px;
+    // height: 210px;
+    width: 100%;
+    height: 210px;
+}
+
+.box-shadow-cover-img-UserMenu{
+    position: absolute;
+    box-shadow: inset -9px -9px 49px 0px rgba(0,0,0,0.75);
+    
+    width: 100%;
+    height:150px;
+}
+.box-shadow-cover-img-UserMenu img {
+    position: relative;
+    z-index: -1;
+}
+
+.box-shadow-cover-img img {
+    position: relative;
+    z-index: -1;
+}
+.UpperImage img{
+    position: relative;
+    z-index: -1;
+}
+.UpperImage{
+    position: absolute;
+}
+#alert-input-0-0{
+    color: aliceblue;
+}
+#alert-input-0-1{
+    color: aliceblue;
+}
+.alert-input-wrapper{
+    color: aliceblue;
+}
+.ng-valid{
+    color: aliceblue;
+}  
+
+.ng-touched{
+    color: aliceblue;
+}
+.ng-dirty{
+    color: aliceblue;
+}
+
+.toast-container{
+    background-color: #1DE839;
+    color: aliceblue;
+    }
+    #alert-msg-5{
+        color: aliceblue;
+    }
+    #alert-input-5-0{
+        color:aliceblue;
+    }
+
+    .alert-input-group{
+        color: aliceblue;
+    }
+    
+
+
+
+
+    // CSS WICH MESSAGES
+    .my-notify-info, .my-notify-success, .my-notify-warning, .my-notify-error {
+        padding:10px;
+        margin:10px 0;
+     
+    }
+    .my-notify-info:before, .my-notify-success:before, .my-notify-warning:before, .my-notify-error:before {
+        font-family:FontAwesome;
+        font-style:normal;
+        font-weight:400;    
+        text-decoration:inherit;
+      
+        margin-right:.2em;
+        text-align:center;
+        font-variant:normal;
+        text-transform:none;
+        line-height:1em;
+        margin-left:.2em;
+        -webkit-font-smoothing:antialiased;
+        -moz-osx-font-smoothing:grayscale
+    }
+    .my-notify-info:before {
+        content:"\f05a";
+    }
+    .my-notify-success:before {
+        content:'\f00c';
+    }
+    .my-notify-warning:before {
+        content:'\f071';
+    }
+    .my-notify-error:before {
+        content:'\f057';
+    }
+    .my-notify-info {
+       
+        color: #00529B;
+        background-color: #BDE5F8;
+    }
+    .my-notify-success {
+        color: #4F8A10;
+        background-color: #DFF2BF;
+    }
+    .my-notify-warning {
+        color: #9F6000;
+        background-color: #FEEFB3;
+    }
+    .my-notify-error {
+        color: #D8000C;
+        background-color: #FFBABA;
+    }

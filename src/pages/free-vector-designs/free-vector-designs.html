@@ -1,0 +1,46 @@
+
+<ion-header>
+
+  <ion-navbar color="dark">
+    <ion-title>Free Vector Designs</ion-title>
+  </ion-navbar>
+  
+
+  <ion-searchbar [(ngModel)]="searchKeyword" 
+                 (keyup.enter)="search(searchKeyword, $event)"
+                 (ionInput)="onCencel($event)">
+
+  </ion-searchbar>
+
+</ion-header>
+
+
+<ion-content style="background-color:#121315">
+   
+  <ion-card  *ngFor="let datas of data">
+    <div  *ngFor="let thumbnail of datas._embedded['wp:featuredmedia']">
+            <img *ngIf="thumbnail.source_url" [src]="thumbnail.source_url" />
+    </div>
+    <ion-card-header style="text-align:center;"><p style="font-weight:bold; font-size:15px;padding:10px;" #acr [innerHTML]="datas.title.rendered "></p></ion-card-header>
+    <ion-card-content style="text-align:center;">
+      <div id="continuereading" [innerHTML]= "datas.excerpt.rendered"></div>
+      
+      
+    </ion-card-content>
+    
+
+
+    <div style="text-align:center;" (click)="catcontent($event, datas)">
+      <button class="button box" href="#popup1"  ion-button   color="dark" style="letter-spacing: 2px; width:80%;" >
+        Get Design File Here
+        <ion-icon style="margin-left:2%;" name="ios-arrow-dropright-outline"></ion-icon>
+      </button>
+    </div>
+    <br>
+  </ion-card>
+
+ <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+      <ion-infinite-scroll-content></ion-infinite-scroll-content>
+    </ion-infinite-scroll> 
+  
+</ion-content>

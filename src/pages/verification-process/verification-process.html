@@ -1,0 +1,71 @@
+
+<ion-header>
+
+  <ion-navbar color="dark">
+    <ion-title>Verifications Process</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content style="background-color:#222222;">
+  <br>
+  <div style="text-align:center;">
+      <label style="color:aliceblue;letter-spacing:2px; letter-spacing:2px; opacity:.6; font-size:15px;">Check Your Verification Process</label>
+  </div>
+  <br><br><br><br>
+
+  <ion-card>
+    <ion-card-header style="background-color:#252526">
+        <label style="color:aliceblue;font-size:14px;"> Email Verifications</label>
+    </ion-card-header>
+    <ion-card-content style="background-color:#2D2D2D;">
+        <br>
+        <br>
+        <div style="text-align:center;">
+          <label style="color:aliceblue; letter-spacing:1px;">{{ emailOfDtabase }}</label>
+        </div>
+        <ion-grid>
+          <ion-row>
+            <ion-col><div style="text-align:center;">
+                <label #VerifyEmail style="color:#32DB64; font-size:13px;">{{ CheckVerification }}</label>
+              </div></ion-col>
+              <ion-col>
+                <ion-icon #SignEmail style="color:#32DB64; font-size:20px;" name="ios-checkmark-outline"></ion-icon>
+              </ion-col>
+          </ion-row>
+        </ion-grid>
+      
+    </ion-card-content>
+  </ion-card>
+<br>
+<br>
+
+
+<!-- Updating Pocess in version 10 -->
+  <!-- <ion-card>
+      <ion-card-header style="background-color:#252526">
+          <label style="color:aliceblue;font-size:14px;"> Phone Verifications</label>
+      </ion-card-header>
+      <ion-card-content style="background-color:#2D2D2D;">
+          <br>
+          <br>
+          <div style="text-align:center;">
+            <label style="color:aliceblue; letter-spacing:1px;">{{(profileData | async)?.PhoneNumber }}</label>
+          </div>
+          <ion-grid>
+            <ion-row>
+              <ion-col><div style="text-align:center;">
+                  <label style="color:#32DB64; font-size:13px;">Verified</label>
+                </div></ion-col>
+                <ion-col>
+                  <ion-icon style="color:#32DB64; font-size:20px;" name="ios-checkmark-outline"></ion-icon>
+                </ion-col>
+            </ion-row>
+          </ion-grid>
+        
+      </ion-card-content>
+    </ion-card> -->
+  
+  
+</ion-content>

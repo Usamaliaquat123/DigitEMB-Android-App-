@@ -1,0 +1,82 @@
+<!-- Generated template for the DigitizingFormComponent component -->
+<ion-card>
+  <ion-card-header style="background-color:#161616; text-align:center;">
+    <!-- Label Of Digitizing Form -->
+      <label  style="color:aliceblue; letter-spacing: 2px; font-size: 14px;" >Enter Your Order Requirements</label>
+  </ion-card-header>
+  <ion-card-content style="background-color:#222222">
+    <ion-grid>
+    <ion-row>
+      <ion-col style="text-align:center;"><div style=" opacity: .8; border-radius:10px; border: 1px solid #FFFFFF; width: 100%;"><ion-input  style="letter-spacing:2px; font-size:12px;color:#FFFFFF;" placeholder="Your Design Name" [(ngModel)]="DesignName" type="text" value= '' ></ion-input></div></ion-col>
+    </ion-row>
+    <br>
+    <ion-row><ion-col style="text-align:center;"><div style=" opacity: .8; border-radius:10px; border: 1px solid #FFFFFF; width: 100%;"><ion-input  style="letter-spacing:2px; font-size:12px;color:#FFFFFF;" placeholder="Your Contact Number" [(ngModel)]="UserContactNumber" type="number" value= '' ></ion-input></div></ion-col></ion-row>
+
+<br>
+<!-- Select Your Desired Formats -->
+    <ion-row>
+        <ion-col ><ion-select  [(ngModel)]="UserSelectedformat" (ionChange)="optionsFn();" style=" max-width: 100% !important;background-color:#121315; color:#FFFFFF;" interface="action-sheet" placeholder="Select Measurements format"  cancelText="Close">
+          <ion-option  value="Default">Select Measurements format</ion-option>
+          <ion-option  value="cm"  >Centimeters</ion-option>
+          <ion-option  value="Inch" >Inches</ion-option>
+          <ion-option  value="HoopSize" >Hoop Size</ion-option>
+          
+         </ion-select></ion-col>
+      </ion-row>
+    <br>
+   <!-- Show and Height Formats -->
+   <div  #HideElementsOfFormatSize style="visibility:hidden; max-height:0px;">
+  <ion-row>
+     <ion-col><label style=" margin-left:15px;font-size: 14px; color:aliceblue; letter-spacing:2px;">Width</label></ion-col>
+     <ion-col ><div style=" opacity: .8; margin-top:-10px; border-radius: 10px;border: 1px solid #FFFFFF; padding: 0.5px;width: 100%; height: 45px;"><ion-input style="color:#FFFFFF;" placeholder="Value" [(ngModel)]="WidthOfFormat" type="number" value="" ></ion-input></div></ion-col>
+    </ion-row>
+    <br>
+    <ion-row>
+        <ion-col><label style=" margin-left:15px;font-size: 14px; color:aliceblue; letter-spacing:2px;">Height</label></ion-col>
+        <ion-col ><div style=" opacity: .8; margin-top:-10px; border-radius: 10px;border: 1px solid #FFFFFF; padding: 0.5px;width: 100%; height: 45px;"><ion-input style="color:#FFFFFF;" placeholder="Value" [(ngModel)]="HeightOfFormat" type="number" value="" ></ion-input></div></ion-col>
+    </ion-row>
+   </div>
+    
+<!-- Select Your Format Options -->
+
+    <ion-row>
+      <ion-col ><ion-select [(ngModel)]="UserSelectedOtherFormat" (ionChange)="OtherFormat();"  style="max-width:100%; background-color:#121315; color:#FFFFFF;" interface="action-sheet" placeholder="Select file format">
+        <ion-option value="opt">Select file format</ion-option>
+        <ion-option value="Dst">.Dst</ion-option>
+        <ion-option value="EMB">.EMB</ion-option>
+        <ion-option value="Exp">.Exp</ion-option>
+        <ion-option value="JEF">.JEF</ion-option>
+        <ion-option value="OtherFormat">Other Format</ion-option>
+        <!-- text field other -->
+       </ion-select></ion-col>
+    </ion-row>
+   <br>
+    <!-- Visible If select Other Format -->
+    <div #ShowOtherFormatTextBox style="visibility:hidden; max-height:0px;">
+    <ion-row>
+      <ion-col style="text-align:center;"><div style=" opacity: .8; border-radius:10px; border: 1px solid #FFFFFF; width: 100%;"><ion-input  [(ngModel)]="OtherFormatTextBoxValues" style="letter-spacing:2px; font-size:12px;color:#FFFFFF;" placeholder="Other Format" type="text"></ion-input></div></ion-col>
+    </ion-row>
+    </div>
+    <!-- Additional Detail Label -->
+    <br>
+
+    <label style="color:aliceblue;font-size:13px; margin-left:2%;">Additional Details :</label><br>
+
+
+  <!-- Textarea User want to design contents -->
+    <ion-row style="width:100%;">
+      <textarea  [(ngModel)] = "UsersDigitizingMessage"  style="background-color:#121315; border-style:none; color:#FFFFFF; font-size:13px;padding: 5%; opacity:.8; " id="" placeholder="Please provide us all the necessary information like size, required file format and any other instructions" cols="60" rows="10"></textarea>
+    </ion-row>
+    <br>
+    <!-- Send Email To Owner -->
+    <ion-row>
+      <ion-col>
+        <div style="text-align:center;">
+            <button (click)="SendEmailInDigitizingForm()" style="text-transform:none; border: 2px solid #FFFFFF; opacity:.8; color:#FFFFFF; background-color:transparent; "  ion-button  round >Send Request</button><br>
+             </div>
+      </ion-col>
+    </ion-row>
+    </ion-grid>
+  </ion-card-content>
+</ion-card>
+

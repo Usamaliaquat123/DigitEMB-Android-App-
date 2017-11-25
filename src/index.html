@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <title>Ionic App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <link rel="icon" type="image/x-icon" href="assets/icon/favicon.ico">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#4e8ef7">
+
+  <!-- cordova.js required for cordova apps -->
+  <script src="cordova.js"></script>
+
+  <!-- un-comment this code to enable service worker
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(() => console.log('service worker installed'))
+        .catch(err => console.error('Error', err));
+    }
+  </script>-->
+
+  <link href="build/main.css" rel="stylesheet">
+
+</head>
+
+<style>
+  
+  @media screen and (max-width: 700px){
+    .box{
+      width: 70%;
+    }
+    .popup{
+      width: 70%;
+    }
+  }
+  #dataContent>p{
+    color:aliceblue;
+    background-color:#222222;
+    text-align: center;
+  }
+  
+  #continuereading>a{
+      visibility: hidden;
+    }
+  
+    #dataContent>p{
+        padding: 20px;
+    }
+  
+    #dataContent>p>p>img{
+      width: 100%;
+      height: auto;
+      
+    }
+  
+  
+  /*  Adjusting Download button */
+      #dataContent>p>h3>div{
+        background-color: #3D3D3D;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        padding-top: -20%;
+        padding-bottom : -20%;
+      }
+      #dataContent>p>h3{
+        padding-top: -10px;
+        padding-bottom: -10px;
+        font-size: 16px;
+      }
+      a{
+        text-decoration: none;
+        color: aliceblue;
+      }
+  
+      #dataContent>p>h2>a{
+        visibility: hidden;
+      }
+      #dataContent>p>h2{
+        text-align: center;
+        margin-top: 0%;
+        margin-bottom: 10%;
+      }
+      #dataContent>p>p>img{
+        margin-bottom: 8%;
+      }
+      #dataContent>p>h3>span>strong{
+        text-align: center;
+      }
+      #dataContent>p>p{
+        text-align: center;
+      }
+      #dataContent>p>p>a>img{
+        width: 100%;
+      height: auto;
+      }
+  </style>
+<body>
+
+  <!-- Ionic's root component and where the app will load -->
+  <ion-app></ion-app>
+
+  <!-- The polyfills js is generated during the build process -->
+  <script src="build/polyfills.js"></script>
+
+  <!-- The vendor js is generated during the build process
+       It contains all of the dependencies in node_modules -->
+  <script src="build/vendor.js"></script>
+
+  <!-- The main bundle js is generated during the build process -->
+  <script src="build/main.js"></script>
+
+</body>
+</html>

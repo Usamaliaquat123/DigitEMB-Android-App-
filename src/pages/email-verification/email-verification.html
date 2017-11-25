@@ -1,0 +1,47 @@
+
+<ion-header>
+  <ion-navbar color="dark">
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-slides style="position: fixed;" pager="false" autoplay="2000"  loop="true" speed="1500" effect="fade">
+        <ion-slide class="swiper-no-swiping" style=" background-size: cover;background-position: center;background-repeat: no-repeat; width:100%;" *ngFor="let background of backgrounds" [ngStyle]="{'background-image': 'url(' + background +')'}">
+    </ion-slide>
+    </ion-slides>
+
+    <div style="   color: white;
+    position: absolute;
+    top: 0;
+    padding: 10vw;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 2;">
+<!--Setting a logo of email verification  -->
+  <div style="text-align:center;">   
+  <ion-icon style="color:#FFFFFF; margin-top:-10%;  font-size:200px; opacity: .7;" name="ios-checkmark-outline"></ion-icon>
+  </div>
+
+<!--   -->
+<div style="text-align:center;">
+  <label style="color:#FFFFFF; font-size: 20px;">Verify Your Email !</label>
+</div><br>
+<div style="text-align:center;">
+  <label style="color:#FFFFFF;">One more step to go , Verify your email this will<br>
+          take some time to setup your profile and then you can continue...
+         check your email we will send email verification link into your account !</label>
+</div>
+  <div style="text-align:center;">   
+  <ion-icon style="color:#FFFFFF;  font-size:120px; opacity: .7;" name="ios-more-outline"></ion-icon>
+  </div>
+
+   <div style="text-align:center;">
+<button style="border: 2px solid #FFFFFF;  color:#FFFFFF;     background-color:transparent; width:80%;" ion-button  round (click)="back()">Want go back ...</button><br>
+ </div>
+    </div>
+
+
+</ion-content>
+

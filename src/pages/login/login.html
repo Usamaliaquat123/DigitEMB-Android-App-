@@ -1,0 +1,76 @@
+
+<ion-content >
+<!-- Setting Background Sliders -->
+  <ion-slides style="position: fixed;" pager="false" autoplay="2000"  loop="true" speed="1500" effect="fade">
+    <ion-slide class="swiper-no-swiping" style=" height: auto; background-size: cover;background-position: center;background-repeat: no-repeat; width:100%;" *ngFor="let background of backgrounds" [ngStyle]="{'background-image': 'url(' + background +')'}"></ion-slide>
+</ion-slides>
+<!-- Overlay Login Components -->
+<div style="   color: white;
+position: absolute;
+top: 0;
+padding: 10vw;
+text-align: center;
+width: 100%;
+margin: 0 auto;
+z-index: 2;">
+<!--Logo here  -->
+<div style="text-align:center;
+            margin-top:20%;">
+<img src="assets/img/logo.png" width="180px" height="180px">
+</div>
+<br>
+<!--Email input here  -->
+<div style="border-radius: 25px;
+border: 2px solid #FFFFFF;
+padding: 0.5px; 
+width: 80%;
+margin-left:10%;
+">
+    <ion-input style="color:#FFFFFF;" placeholder="Enter Your email here" name="email" type="text" value=""  [(ngModel)] = "user.email"></ion-input>
+</div>
+<br>
+<!-->
+//Password  input here -->
+<div style="border-radius: 25px;
+border: 2px solid #FFFFFF;
+padding: 0.5px; 
+width: 80%;
+text-align:center;
+margin-left:10%;
+">
+
+<ion-input style="color:#FFFFFF;" placeholder="Enter Your password here" name="password" type="password" value="" [(ngModel)] = "user.password"></ion-input>
+
+</div>
+
+<br>
+
+
+<div (click)="login(user)" style="border-radius: 25px;
+border: 2px solid #FFFFFF;
+padding: 12px; 
+width: 80%;
+text-align:center;
+margin-left:10%;
+">
+Login
+</div>
+
+<ion-grid>
+<ion-row>
+    <ion-col><div style="margin-left:8%;" >
+                  <button style="color:#FFFFFF;" (click)="ResetPasswordPage()" ion-button clear >Forgot password</button>
+             </div>
+    </ion-col>
+   
+    <ion-col>
+            <div style="text-align:center;">
+                <button style="color:#FFFFFF;" (click)="SignUp()" ion-button clear >Sign up</button>    
+            </div>    
+    </ion-col>
+</ion-row>
+</ion-grid>
+
+<br>
+</div>
+</ion-content>

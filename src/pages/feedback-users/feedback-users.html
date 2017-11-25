@@ -1,0 +1,22 @@
+
+<ion-header color="dark">
+
+  <ion-navbar color="dark">
+    <ion-title>FeedBack</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content style="background-color:#121315;">
+  <br>
+    <div style="text-align:center;">
+      <p style="color:aliceblue; font-size:20px; letter-spacing:2px;">Give Us feed back ! </p>
+    </div>
+    <br>
+      <div style="margin-left:3%; margin-right:3%;"><textarea [(ngModel)]="FeedBackOfUser" style="background-color:#1E1F2B; border-style:none; color:#FFFFFF; font-size:13px;padding: 5%; opacity:.8; " id="" placeholder="Your FeedBack" cols="48" rows="25"></textarea></div>
+
+      <div style="text-align:center; margin-top:5%;">
+      <button (click)="SendFeedBack()" style="text-transform:none; border: 2px solid #FFFFFF; opacity:.8; color:#FFFFFF; background-color:transparent; "  ion-button  round >Send FeedBack</button>
+      </div>
+</ion-content>
