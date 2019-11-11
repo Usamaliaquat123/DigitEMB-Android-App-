@@ -50,8 +50,8 @@
   "description": "Cordova Camera Plugin",
   "devDependencies": {
     "dmd-plugin-cordova-plugin": "^0.1.0",
-    "husky": "^0.10.1",
-    "jsdoc-to-markdown": "^1.2.0",
+    "husky": "^3.0.9",
+    "jsdoc-to-markdown": "^5.0.2",
     "jshint": "^2.6.0"
   },
   "engines": {
