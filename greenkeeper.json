@@ -1,0 +1,25 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "package.json",
+        "plugins/cordova-plugin-browsertab/package.json",
+        "plugins/cordova-plugin-buildinfo/package.json",
+        "plugins/cordova-plugin-camera/package.json",
+        "plugins/cordova-plugin-compat/package.json",
+        "plugins/cordova-plugin-console/package.json",
+        "plugins/cordova-plugin-device/package.json",
+        "plugins/cordova-plugin-email-composer/package.json",
+        "plugins/cordova-plugin-facebook4/package.json",
+        "plugins/cordova-plugin-inappbrowser/package.json",
+        "plugins/cordova-plugin-network-information/package.json",
+        "plugins/cordova-plugin-splashscreen/package.json",
+        "plugins/cordova-plugin-statusbar/package.json",
+        "plugins/cordova-plugin-whitelist/package.json",
+        "plugins/cordova-universal-links-plugin/package.json",
+        "plugins/ionic-plugin-keyboard/package.json",
+        "plugins/onesignal-cordova-plugin/package.json"
+      ]
+    }
+  }
+}
