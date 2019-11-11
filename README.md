@@ -1,6 +1,8 @@
 
 # DigitEMB Free Embroidery App
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Usamaliaquat123/DigitEMB-Android-App-.svg)](https://greenkeeper.io/)
+
 DigitEmb is one of the leading companies of digitizing and vectorization services of the industry.
 They are based in Canada but where provide our magnificent services, from US to Uk to all over the globe at exceptionally inexpensive rates. Our services have highlighted us widely in the industry.
 
